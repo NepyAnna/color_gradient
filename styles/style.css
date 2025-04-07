@@ -1,3 +1,40 @@
 body {
-    font-family: Arial;
+    background-color: #0d1117;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(6, 50px);
+    gap: 15px;
+  }
+  
+  .box {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    background: hsl(var(--hue), 80%, var(--lightness));
+  }
+
+.box:nth-child(6n+1) {
+    --hue: 240;
+}
+.box:nth-child(6n+2) {
+    --hue: 260;
+}
+.box:nth-child(6n+3) {
+    --hue: 280;
+}
+.box:nth-child(6n+4) {
+    --hue: 300;
+}
+.box:nth-child(6n+5) {
+    --hue: 320;
+}
+.box:nth-child(6n) {
+    --hue: 340;
 }
